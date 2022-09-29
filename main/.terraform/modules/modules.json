@@ -1,1 +1,1 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"resource_group","Source":"../modules/rg","Dir":"../modules/rg"},{"Key":"storage_account","Source":"../modules/st","Dir":"../modules/st"}]}
+{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"function_app","Source":"../modules/functionapp","Dir":"../modules/functionapp"},{"Key":"resource_group","Source":"../modules/resourcegroup","Dir":"../modules/resourcegroup"},{"Key":"storage_account","Source":"../modules/storageaccount","Dir":"../modules/storageaccount"}]}
