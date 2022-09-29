@@ -1,14 +1,13 @@
-provider "azurerm"{
-    features{}
+provider "azurerm" {
+    features {}
 }
 
-resource "azurerm_resource_group" "resource_group"{
-    name = "jakkashiva-rg"
-    location = "uksouth"
-    tags = {
-        environment = "production"
-        source = "terraform"
-        purpose = "testing"
-    }
+module "resource_group" {
+  source = "../modules/rg"
+}
 
+module "storage_account" {
+  source = "../modules/st"
+  depends_on          = [module.resource_group]
+  resource_group_name = module.resource_group.resource_group_name
 }
